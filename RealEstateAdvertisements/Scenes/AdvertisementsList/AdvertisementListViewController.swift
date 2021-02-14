@@ -12,7 +12,7 @@ class AdvertisementListViewController: UIViewController {
     @IBOutlet weak var tableView : UITableView!
     var dataSource: AdvertisementListDataSource?
     var viewModel : AdvertisementListViewModel?
-    
+    var selectedId: Int?
     
     init(configurator: AdvertisementListConfigurator = AdvertisementListConfigurator.shared) {
         
@@ -38,6 +38,7 @@ class AdvertisementListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
+        tableView.delegate   = self
         tableView.register(UINib(nibName: AdvertisementCell.identifier, bundle: nil), forCellReuseIdentifier: AdvertisementCell.identifier)
         self.dataSource?.data.addAndNotify(observer: self) { [weak self] in
             DispatchQueue.main.async {
@@ -53,5 +54,21 @@ class AdvertisementListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let advertisementDetailsVC = segue.destination as? AdvertisementDetailsViewController {
+            advertisementDetailsVC.advertisementId = selectedId
+        }
+    }
+}
+
+// MARK: UITableViewDelegate
+extension AdvertisementListViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedRow = viewModel?.dataSource?.data.value.row(rowAt: indexPath) as? AdvertisementRowViewModel {
+            selectedId = selectedRow.identifier
+        }
+        self.performSegue(withIdentifier: "AdvertisementDetailsViewController", sender: self)
+    }
 }
 

@@ -42,6 +42,7 @@ struct AdvertisementRowViewModel : TableRowViewModel {
     
     var rowClass: AnyClass { return AdvertisementCell.self }
     
+    var identifier: Int
     var iconURL: String?
     var category: String
     var price: Double

@@ -49,11 +49,22 @@
                     <navigationItem key="navigationItem" id="bhd-Ua-1xc"/>
                     <connections>
                         <outlet property="tableView" destination="0YP-zF-qvy" id="XFt-Sq-2AU"/>
+                        <segue destination="v8s-kg-Esl" kind="show" identifier="AdvertisementDetailsViewController" id="GaU-R7-4uF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-786" y="-52"/>
+        </scene>
+        <!--AdvertisementDetails-->
+        <scene sceneID="4hD-Ud-W3M">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AdvertisementDetailsViewController" storyboardName="AdvertisementDetails" id="v8s-kg-Esl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Aa-U3-bg1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LD8-uB-Z3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="58"/>
         </scene>
     </scenes>
     <resources>

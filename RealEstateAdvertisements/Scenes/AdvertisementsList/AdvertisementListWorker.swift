@@ -29,7 +29,7 @@ class AdvertisementListWorker {
             }
             roomsArea += "\(advertisement.area) m\u{00B2}"
             
-            return AdvertisementRowViewModel(iconURL: advertisement.iconURL, category: advertisement.propertyType, price: advertisement.price, city: advertisement.city, roomsArea: roomsArea)
+            return AdvertisementRowViewModel(identifier: advertisement.advertisementId, iconURL: advertisement.iconURL, category: advertisement.propertyType, price: advertisement.price, city: advertisement.city, roomsArea: roomsArea)
         }
         let sections = rows.count > 0 ? [AdvertisementsSectionViewModel(dataModel: rows)] : []
         return sections

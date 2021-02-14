@@ -10,7 +10,7 @@ import Foundation
 
 public enum APIAdvertisementService {
     case getAdvertisementList
-    case getAdvertisementById(Id: String)
+    case getAdvertisementById(Id: Int)
 }
 
 extension MockAPIProtocol {
