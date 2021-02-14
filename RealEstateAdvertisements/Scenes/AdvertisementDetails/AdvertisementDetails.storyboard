@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2cX-YU-y5K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Black.ttf">
+            <string>SourceSansPro-Black</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Advertisement Details View Controller-->
+        <scene sceneID="oXS-Mu-9Lf">
+            <objects>
+                <viewController storyboardIdentifier="AdvertisementDetailsViewController" id="2cX-YU-y5K" customClass="AdvertisementDetailsViewController" customModule="RealEstateAdvertisements" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yEe-49-R9X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UkG-B7-Brn">
+                                <rect key="frame" x="20" y="95" width="374" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="kgG-Wl-bpg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maison - Villa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCN-iQ-5zZ">
+                                <rect key="frame" x="30" y="316" width="364" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="vNS-KJ-Gh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3p . 2ch . 65m2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP9-tU-U0J">
+                                <rect key="frame" x="30" y="353" width="364" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="AEZ-jw-kSt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="456000 €" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kc-VN-wTn">
+                                <rect key="frame" x="30" y="390" width="364" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="gPU-Uh-BpK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="qRV-Uu-Et6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Black" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="courbevoie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDJ-nR-Rzd">
+                                <rect key="frame" x="30" y="426" width="364" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="UjW-pm-61G"/>
+                                    <constraint firstAttribute="height" constant="22" id="e5o-nw-Fjq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GSL STICKINESS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32s-WH-yBA">
+                                <rect key="frame" x="30" y="463" width="364" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Git-TQ-mUn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="LQe-mM-0or"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="fGa-5Q-Gq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LWE-Y3-TXJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Kc-VN-wTn" firstAttribute="leading" secondItem="LWE-Y3-TXJ" secondAttribute="leading" constant="30" id="0Px-pW-jw2"/>
+                            <constraint firstItem="3Kc-VN-wTn" firstAttribute="top" secondItem="tP9-tU-U0J" secondAttribute="bottom" constant="15" id="7NM-le-O4D"/>
+                            <constraint firstItem="UkG-B7-Brn" firstAttribute="leading" secondItem="LWE-Y3-TXJ" secondAttribute="leading" constant="20" id="7uj-7V-kuc"/>
+                            <constraint firstAttribute="trailing" secondItem="tP9-tU-U0J" secondAttribute="trailing" constant="20" id="97i-7a-2vq"/>
+                            <constraint firstItem="LWE-Y3-TXJ" firstAttribute="trailing" secondItem="32s-WH-yBA" secondAttribute="trailing" constant="20" id="Cok-4X-cA1"/>
+                            <constraint firstItem="zDJ-nR-Rzd" firstAttribute="top" secondItem="3Kc-VN-wTn" secondAttribute="bottom" constant="14" id="DI0-Rd-rkz"/>
+                            <constraint firstItem="LWE-Y3-TXJ" firstAttribute="trailing" secondItem="zDJ-nR-Rzd" secondAttribute="trailing" constant="20" id="HCG-jO-XfF"/>
+                            <constraint firstItem="LWE-Y3-TXJ" firstAttribute="trailing" secondItem="pCN-iQ-5zZ" secondAttribute="trailing" constant="20" id="Jvu-gG-0D9"/>
+                            <constraint firstItem="pCN-iQ-5zZ" firstAttribute="top" secondItem="UkG-B7-Brn" secondAttribute="bottom" constant="15" id="NoR-kK-3wk"/>
+                            <constraint firstItem="zDJ-nR-Rzd" firstAttribute="leading" secondItem="LWE-Y3-TXJ" secondAttribute="leading" constant="30" id="PPA-Im-dWY"/>
+                            <constraint firstItem="LWE-Y3-TXJ" firstAttribute="trailing" secondItem="3Kc-VN-wTn" secondAttribute="trailing" constant="20" id="RQ9-lt-kdC"/>
+                            <constraint firstItem="UkG-B7-Brn" firstAttribute="top" secondItem="LWE-Y3-TXJ" secondAttribute="top" constant="51" id="aLx-cP-Dfj"/>
+                            <constraint firstItem="32s-WH-yBA" firstAttribute="leading" secondItem="LWE-Y3-TXJ" secondAttribute="leading" constant="30" id="aX0-at-iJn"/>
+                            <constraint firstItem="32s-WH-yBA" firstAttribute="top" secondItem="zDJ-nR-Rzd" secondAttribute="bottom" constant="15" id="cSh-hF-9qa"/>
+                            <constraint firstItem="tP9-tU-U0J" firstAttribute="leading" secondItem="yEe-49-R9X" secondAttribute="leading" constant="30" id="mXp-9y-ay1"/>
+                            <constraint firstItem="pCN-iQ-5zZ" firstAttribute="leading" secondItem="LWE-Y3-TXJ" secondAttribute="leading" constant="30" id="nUZ-kM-cnj"/>
+                            <constraint firstAttribute="trailing" secondItem="3Kc-VN-wTn" secondAttribute="trailing" constant="20" id="oSb-ch-WsG"/>
+                            <constraint firstItem="tP9-tU-U0J" firstAttribute="top" secondItem="pCN-iQ-5zZ" secondAttribute="bottom" constant="15" id="pNQ-vn-nHF"/>
+                            <constraint firstItem="3Kc-VN-wTn" firstAttribute="leading" secondItem="yEe-49-R9X" secondAttribute="leading" constant="30" id="wtN-V3-VGS"/>
+                            <constraint firstItem="LWE-Y3-TXJ" firstAttribute="trailing" secondItem="UkG-B7-Brn" secondAttribute="trailing" constant="20" id="zm6-iC-UH9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="zDJ-nR-Rzd" id="2vb-Cn-hlh"/>
+                        <outlet property="iconImageView" destination="UkG-B7-Brn" id="hQx-MH-ohJ"/>
+                        <outlet property="priceLabel" destination="3Kc-VN-wTn" id="ZJr-tH-wYP"/>
+                        <outlet property="professionalLabel" destination="32s-WH-yBA" id="7xD-Nx-w5c"/>
+                        <outlet property="propertyTypeLabel" destination="pCN-iQ-5zZ" id="E5e-aV-zos"/>
+                        <outlet property="roomsAreaLabel" destination="tP9-tU-U0J" id="7mc-N2-s48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfm-kM-pA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="-75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
